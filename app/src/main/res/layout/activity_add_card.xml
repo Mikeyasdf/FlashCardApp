@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCardActivity">
+
+    <EditText
+        android:id="@+id/QuestionField"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="20dp"
+        android:hint="Your question goes here"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/Answerfield"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="168dp"
+        android:hint="Your answer goes here"
+        android:inputType="textMultiLine" />
+
+    <ImageView
+        android:id="@+id/minussymb"
+        android:layout_width="71dp"
+        android:layout_height="75dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@mipmap/minussymbolv2" />
+
+    <ImageView
+        android:id="@+id/savesymb"
+        android:layout_width="83dp"
+        android:layout_height="65dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="13dp"
+        app:srcCompat="@mipmap/savesymbolv1" />
+
+</RelativeLayout>

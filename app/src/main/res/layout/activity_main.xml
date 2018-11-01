@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -14,8 +15,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="48dp"
-        android:text="Who is the first president of the USA?"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="53dp"
+        android:text="@string/question"
         android:textAlignment="center"
         android:textSize="40sp" />
 
@@ -23,12 +25,22 @@
         android:id="@+id/flashCardAnswer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:visibility="invisible"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="164dp"
-        android:text="George Washington"
-        android:textSize="40sp" />
+        android:layout_marginBottom="238dp"
+        android:text="@string/answer"
+        android:textSize="40sp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/plussymb"
+        android:layout_width="82dp"
+        android:layout_height="79dp"
+        android:layout_alignEnd="@+id/flashCardAnswer"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-119dp"
+        android:layout_marginBottom="8dp"
+        app:srcCompat="@mipmap/plussymbolv2" />
 
 
 </RelativeLayout>
